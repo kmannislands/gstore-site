@@ -5,13 +5,17 @@
 html,
 body {
   height: 100%;
-  background-color: $dark;
+  background-color: $white;
 }
 
 body {
-  color: $white;
+  color: $dark;
   text-align: center;
-  text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+  // text-shadow: 0 .05rem .1rem rgba(0,0,0,.5);
+}
+
+.dark {
+  color: $white;
 }
 
 .full-height {
@@ -95,6 +99,19 @@ a:hover {
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: bold;
+}
+
+// Slider
+.slide {
+	height: 100vh;
+	width: 100vw;
+	background-size: cover;
+	background-position: 50% 50%;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*

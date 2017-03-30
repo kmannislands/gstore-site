@@ -6134,12 +6134,14 @@ a[data-bubble].blue:after {
 html,
 body {
   height: 100%;
-  background-color: #232323; }
+  background-color: #fff; }
 
 body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5); }
+  color: #232323;
+  text-align: center; }
+
+.dark {
+  color: #fff; }
 
 .full-height {
   height: 100vh; }
@@ -6209,6 +6211,16 @@ a:hover {
   padding: .75rem 1.25rem;
   font-weight: bold; }
 
+.slide {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /*
  * Affix and center
  */
@@ -6268,3 +6280,6 @@ a:hover {
     float: left; }
   .nav-masthead {
     float: right; } }
+
+nav {
+  position: absolute; }
