@@ -1,0 +1,30 @@
+{
+  "name": "gstore-site",
+  "description": "website for the general store coop at UCSD",
+  "main": "keystone.js",
+  "authors": [
+    "kieran mann",
+    "mohammed al elew"
+  ],
+  "license": "copyright 2017",
+  "keywords": [
+    "gstore"
+  ],
+  "homepage": "https://thegeneralstorecoop.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "font-awesome": "fontawesome#^4.7.0",
+    "tether": "^1.4.0"
+  },
+  "resolutions": {
+    "bootstrap": "v4.0.0-alpha.6"
+  }
+}

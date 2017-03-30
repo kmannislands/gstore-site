@@ -1,0 +1,25 @@
+<nav class="navbar navbar-toggleable-md navbar-light">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">Kieran Mann</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+			{{# each navLinks}}
+				<li class="nav-item{{#ifeq ../section key}} active{{else}}{{/ifeq}}">
+					<a class="nav-link" href="{{ href }}">
+						{{ label }}{{#ifeq ../section key}}<span class="sr-only">(current)</span>{{else}}{{/ifeq}}
+					</a>
+				</li>
+			{{/each}}
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+			{{#if user}}
+			<a href="/keystone/signout" class="btn btn-outline-danger my-2 my-sm-0">Sign Out</a>
+			{{else}}
+			<a href="/keystone/signin" class="btn btn-outline-success my-2 my-sm-0">Sign In</a>
+			{{/if}}
+    </form> -->
+  </div>
+</nav>
